@@ -1,0 +1,131 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+<title>WhatCat</title>
+    
+<link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.min.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script src="jQuery/jquery-1.11.2.min.js"></script>
+<script src="jQuery/jquery.mobile-1.4.5.min.js"></script>
+<script src="jQuery/jquery.boxshadow.js"></script>
+<script src="jQuery/script.js" async defer></script>
+</head>
+ 
+<body oncontextmenu="return false;"> 
+
+<div data-role="page" id="page" data-theme="a">
+	<video autoplay loop muted poster="Images/videoLoading.gif">
+		<source src="video/backgroundVideo.mp4" type="video/mp4">
+	</video>
+    <div data-role="header">
+        <h1>What Cat is it?</h1>
+    </div>
+    <!--<div data-role="content">-->
+    <div data-role="main" class="ui-content" align="center">
+		<div id="startPage">
+	         <button data-inline = "true" id = "startBtn">Start Game</button>
+			<div id="instruction">
+				<ul>
+					<li>Try to recognize the cat in the picture and get a new high score!</li>
+					<li>If not select an answer within 30 seconds, you will be automatically sent to the next question!</li>
+					<li>You cannot change your answer once you select one!</li>
+				</ul>
+			</div>
+		</div>
+   </div>
+   <div data-role="footer" >
+        <h4>Dapeng Zhang 100612354</h4>
+   </div>
+</div>
+    
+<div data-role="page" id="page2">
+    <div data-role="header" data-add-back-btn="true">
+        <h1>What Cat is it?</h1>
+    </div>
+    <!--<div data-role="content">-->
+    <div data-role="main" class="ui-content">
+		<aside id="ansTimerContainer">
+			<section id="ansTimer"></section>
+		</aside>
+		<aside id="floatingWindow">
+			<figure>
+				<figcaption id="numQuest"></figcaption>
+				<img id = "ansImg" alt="">
+				<figcaption id="ansResult"></figcaption>
+				<figcaption id="rightAns"></figcaption>
+			</figure>
+			<section id="nextBtn">NEXT</section>
+		</aside>
+		<div class = "ui-field-contain" id="flipcard">
+			<img alt="Photo of cat" id="questionImg">
+		  <fieldset data-role="controlgroup">
+		    <input type="radio" name="radAnswers" id="radAnswers_0" value="" />
+		    <label for="radAnswers_0" id="rad0"></label>
+		    <input type="radio" name="radAnswers" id="radAnswers_1" value="" />
+		    <label for="radAnswers_1" id="rad1"></label>
+		    <input type="radio" name="radAnswers" id="radAnswers_2" value="" />
+		    <label for="radAnswers_2" id="rad2"></label>
+		    <input type="radio" name="radAnswers" id="radAnswers_3" value="" />
+		    <label for="radAnswers_3" id="rad3"></label>
+	      </fieldset>
+	  </div>
+		<br>
+		<br>	
+    </div>
+    <div data-role="footer" > 
+        <h4>Dapeng Zhang 100612354</h4>    
+    </div>
+</div>
+    
+<div data-role="page" id="page3">
+	<video autoplay loop muted poster="Images/videoLoading.gif">
+		<source src="video/backgroundVideo.mp4" type="video/mp4">
+	</video>
+    <div data-role="header" data-add-back-btn="true">
+         <h1>What Cat is it?</h1>
+    </div>
+    <!--<div data-role="content">-->
+    <div data-role="main" class="ui-content">	
+		<aside id="enterName">
+			<section id="scoreResult"></section>
+			<div data-role="fieldcontain" id="textContainer">
+			  <input type="text" name="nameInput" id="nameInput" value="Unnamed" />
+			  <button id="confirmBtn">Save</button>
+			  <section id="messageAns"></section>
+		 	 </div>
+			<section id="collapseBtn">COLLAPSE</section>
+		</aside>
+		<div id="btnGroup">
+			<button id = "startAgainBtn" data-inline="true">Start Game</button>
+			<br><br>
+			<button id = "topBtn" data-inline="true">Top Scores</button>
+		</div>
+    </div>
+    <div data-role="footer" >
+        <h4>Dapeng Zhang 100612354</h4>
+  	</div>
+</div>
+    
+<div data-role="page" id="page4">
+	<video autoplay loop muted poster="Images/videoLoading.gif">
+		<source src="video/backgroundVideo.mp4" type="video/mp4">
+	</video>
+    <div data-role="header" data-add-back-btn="true">
+          <h1>What Cat is it</h1>
+    </div>
+    <!--<div data-role="content">-->
+    <div data-role="main" class="ui-content" id="topPageSlide">
+		<button id = "backBtn" data-inline="true">Back</button>
+		<button id = "clearBtn" data-inline="true">Clear</button>
+        <div id="scoreGroup">
+            <ul id = "scoreAns"></ul>	
+        </div>
+    </div>
+    <div data-role="footer" >
+        <h4>Dapeng Zhang 100612354</h4>
+  	</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,226 @@
+	div[data-role='footer']{
+		position: fixed;
+		width: 100%;
+		bottom: 0;
+		z-index: 100;
+	}
+	video {
+	  position: absolute;
+	  object-fit:cover;
+	  height: 100%;
+	  width: 100%;
+	}
+	body{ 
+	    padding-left: calc(100vw - 100%);
+		user-select: none;
+		overflow: hidden;
+	}
+	#page2{
+		white-space: nowrap;
+	}
+	body, #page, #page2, #page3, #page4{
+		background-image: url("../Images/intermediate.jpg");
+	} 
+	.ui-content{
+		text-align: center;
+		height: 30em;
+	}
+	.ui-field-contain{
+		top:-5em; 
+		width: 60%; 
+		margin: auto;
+	}
+	img{
+		width: 100%;
+	}
+	fieldset{
+		width: 128%;
+	}
+	p{
+		font-size: 2em;
+		position: absolute;
+		left:40%;
+	}
+	#startPage{
+		position:absolute;
+		top: 30%;
+		left: 50%;
+		list-style-image: url("../Images/cat-icon.png");
+		font-size: 0.7em;
+		color: yellow;
+		text-align: center;
+		text-shadow: black 0.1em 0.1em 0.2em;
+		width: 20em;
+	}
+	#instruction{
+		position: relative;
+		left: -50%;
+	}
+	#scoreGroup{
+		position:absolute;
+		list-style-image: url("../Images/cat-icon.png");
+		font-size: 1.5em;
+		color: antiquewhite;
+		font-weight: 100;
+		text-align: center;
+		text-shadow: 0.05em 0.1em 0.1em black;
+		left: 50%;
+	}
+    #scoreAns{
+        position: relative;
+        left: -50%;
+    }
+	#scoreResult{
+		font-size:15px;
+		padding-top: 3em;
+		padding-left:3.2em;
+		text-align: left;
+	}
+	#messageAns{
+		font-size:20px;
+		text-align:center;
+		white-space: nowrap;
+	}
+	#nameInput{
+		text-align: center;
+	}
+	#rightAns{
+		font-size: 0.5em;
+	}
+	figure{
+		position:absolute;
+		padding-top: 7%;
+		left:0.5em;
+		height: 100%;
+	}
+	#ansImg{
+		height:20%;
+		width: auto;
+	}
+	#floatingWindow,#enterName{
+		position: fixed;
+		top: 12.5%;
+		border:thin;
+		background-color: antiquewhite;
+		height:10em;
+		border-radius: 0 0.5em 0.5em 0;
+		z-index: 100;
+		color: black;
+		box-shadow: 3px 3px 20px 5px black;	
+		font-size: 2.5em;
+		overflow: hidden;
+	}
+	#floatingWindow{
+		left:-8em;
+		width:8em;
+	}
+	#enterName{
+		left: -4.5em;
+		width:6em;
+	}
+	#collapseBtn,#nextBtn{
+		color: black;
+		cursor: pointer;
+		position: absolute;
+		writing-mode: vertical-rl;
+		text-align: center;
+		vertical-align: top;
+		right: 0;
+		top:0;
+		height: 100%;
+		width: 1.5em;
+		background-color: moccasin;
+		line-height: 200%;
+	}
+	#ansTimerContainer{
+		position: fixed;
+		z-index: 99;
+		right: 5%;
+		top:2.5em;
+		height: 1em; 
+		width: 2em; 
+		color: white;
+		text-align: center;
+		font-size: 2em;
+	}
+	#ansTimer{
+		position: relative;
+		top:-0.5em;
+	}
+	#textContainer{
+		font-size:25px;
+		text-align: center;
+		font-weight: lighter;
+		position: absolute; 
+		left: 10%;
+		top:20%;
+	}
+	#flipcard{
+		width: 20em;
+		height: 25em;
+		border-style: solid;
+		border-radius: 5%;
+		overflow: hidden;
+		
+	}
+	#questionImg{
+		position:relative;
+		margin-top: -0.8em;
+	}
+	#topPageSlide{
+		white-space: nowrap;
+	}
+	#startBtn{
+		font-size:3em;
+		left: -50%;
+	}
+	#btnGroup{
+		position: absolute;
+		top: 25%;
+		left: 50%;
+	}
+	#startAgainBtn, #topBtn{
+		position: relative;
+		left: -50%;
+		font-size:1.5em;
+	}
+	#backBtn, #clearBtn{
+		font-size: 1.5em;
+	}
+	@media(orientation:landscape){
+		html,body{
+			overflow-y: scroll;
+		}
+		#floatingWindow,#enterName{
+			top: 0.15em;
+			height: 7em;
+		}
+		
+		#startBtn{
+			font-size:2em;
+			left: -40%;
+		}
+		#instruction{
+			padding-left: 6em;
+		}
+		#startPage{
+			top:15%;
+			left:45%;
+			width: 30em;
+		}
+        #btnGroup{
+            top:10%;
+        }
+        #page .ui-content{
+            height: 100%;
+        }
+        #pag3 .ui-content{
+            height: 10em;
+        }
+        #page4 .ui-content{
+            height: 100%;
+        }
+        figure{
+            padding-top: 3%;
+        }
+	}
