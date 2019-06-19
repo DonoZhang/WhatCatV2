@@ -23,7 +23,7 @@
 	} 
 	.ui-content{
 		text-align: center;
-		height: 30em;
+		height: 100%;
 	}
 	.ui-field-contain{
 		top:-5em; 
@@ -102,7 +102,7 @@
 		top: 8.5%;
 		border:thin;
 		background-color: antiquewhite;
-		height:10em;
+		height:70%;
 		border-radius: 0 0.5em 0.5em 0;
 		z-index: 100;
 		color: black;
