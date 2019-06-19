@@ -156,8 +156,8 @@
 		top:20%;
 	}
 	#flipcard{
-		height: 80%;
-		width: auto;
+		width: 70%;
+		height: auto;
 		border-style: solid;
 		border-radius: 5%;
 		overflow: hidden;
