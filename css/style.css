@@ -99,7 +99,7 @@
 	}
 	#floatingWindow,#enterName{
 		position: fixed;
-		top: 12.5%;
+		top: 8.5%;
 		border:thin;
 		background-color: antiquewhite;
 		height:10em;
